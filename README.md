@@ -54,6 +54,9 @@ dependencies {
 in your app entry point initialize validator translation
 ```kotlin
 ValidatedTranslation.initDefaultAndroidAdapter(context)
+    //include default translations
+    .applyDefaultTranslations()
+    
 ```
 
 
