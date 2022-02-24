@@ -1,4 +1,4 @@
-#A validator for kotlin
+# A validator for kotlin
 validate your inputs or objects with the power kotlin typesafe builders
 ## Usage
 this is only validate a simple input 
@@ -50,7 +50,7 @@ ValidatedTranslation.initWithDefault()
 ```
 
 
-# Dive deeper
+# Features
 ## Combining rules together
 you can validate your input by multiple rules
 ### Here is an example
