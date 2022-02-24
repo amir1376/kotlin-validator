@@ -110,7 +110,7 @@ val userValidation=compositeRule<User>{
             (containsAtLeastNumber(1)) and 
             inRange(8..64)
             )
-    User::confirmPassword mustBe sameAss(User::password)
+    User::confirmPassword mustBe sameAs(User::password)
     User::gender mustBe oneOf<Gender>()
 }
 //user input
@@ -177,9 +177,9 @@ you can implement your own translation by implementing `ValidatorTranslationAdap
 
 
 ## Android support
-at the moment we have separated android module that have
+at the moment we have separated android module 
 that contains an Android translation adapter
-it has some useful extensions for provide translation
+it has some useful extensions to provide translation
 from string resources
 ```kotlin
 Validator.android().apply{
@@ -191,7 +191,7 @@ Validator.android().apply{
 
 if you use this library for android you can use default translation provided 
 by the android module
-the currently supported languages are 
+currently supported languages are 
 * English (which is the default one if)
 * Persian
 
