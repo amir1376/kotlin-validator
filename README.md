@@ -4,25 +4,32 @@
 
 # A validator for kotlin
 validate your inputs or objects with the power kotlin typesafe builders
+
+
+
 ## Usage
-this is only validate a simple input 
+quick introduction
 ```kotlin
-//inside a suspend function
-val input="yourBeautifulEmail@gmail.com"
-val result=email.validate(input)
+val result=email.validate("yourEmail@gmail.com")
 if(result.isValid){
-    println("provided email is valid")
-//    in case of email validation
-    println("user is: "+result.user)
-    println("domain of email is: "+result.domain)
+    println("provided email is valid ,user:${result.user},host:${result.host}")
 }else{
-//if validationResult is invalid
-//it always provide reason
-    val reason=result.reason!!
-//tell the user why input is invalid
-    replayToUser(reason.translate().joinToString(" "))
+    replayToUser(result.reason!!.translate())
 }
 ```
+or
+```kotlin
+val result=compositeRule<User>{
+    User::email mustBe email
+    User::password mustBe inRange(8..64)
+}.validate(user)
+if(!result.isValid){
+    println(result[User::email]?.translate())
+    println(result[User::password]?.translate())
+}
+```
+
+
 # Setup
 ## Dependency
 put this code snippet into your gradle script
@@ -41,12 +48,18 @@ dependencies {
     implementation 'com.github.amir1376.kotlin-validator:core:$version'
 }
 ```
+
+
+
 ##Android
 in your app entry point initialize validator translation
 ```kotlin
 ValidatedTranslation.initDefaultAndroidAdapter()
 ```
+
+
 ##JVM
+
 before any use of translation provide a TranslationAdapter
 here is the default adapter
 ```kotlin
@@ -55,6 +68,7 @@ ValidatedTranslation.initWithDefault()
 
 
 # Features
+
 ## Combining rules together
 you can validate your input by multiple rules
 ### Here is an example
@@ -62,7 +76,7 @@ you can validate your input by multiple rules
 val result=(email or empty).validate(input)
 ```
 
-## Validate nested objects
+## Validate complex nested objects
 of course sometimes you want to validate a model
 the library has support this too
 for example you have the following models
