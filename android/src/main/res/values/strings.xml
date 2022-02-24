@@ -1,0 +1,27 @@
+<resources>
+    <string name="validator_must">must</string>
+    <string name="validator_or">or</string>
+    <string name="validator_and">and</string>
+    <string name="validator_must_email">must be email</string>
+    <string name="validator_must_email_host">email host must be on of %s</string>
+    <string name="validator_must_contains_at_least_lowercase">must contains at least %s lowercase</string>
+    <string name="validator_must_contains_at_least_upper_case">must contains at least %s uppercase</string>
+    <string name="validator_must_contains_at_least_number">must contains at least %s number</string>
+    <string name="validator_must_absent">must not contains %s</string>
+    <string name="validator_must_present">must contains %s</string>
+    <string name="validator_must_be_one_of">must be one of %s</string>
+    <string name="validator_must_contain_at_least_symbols">must contain these symbols %s</string>
+    <string name="validator_must_in_range">must be at least %s and max %s</string>
+    <string name="validator_must_not_empty">must not be empty</string>
+    <string name="validator_must_empty">must empty</string>
+    <string name="validator_must_pattern_patch">invalid input according to %s pattern</string>
+    <string name="validator_must_starts_with">must starts with %s</string>
+    <string name="validator_must_starts_with_eng_char">must starts with english character</string>
+    <string name="validator_must_ends_with">must ends with %s</string>
+    <string name="validator_must_same_as">value must be same as value of %s property</string>
+    <string name="validator_must_be_equal_to">must be equal to %s</string>
+</resources>
+
+
+
+

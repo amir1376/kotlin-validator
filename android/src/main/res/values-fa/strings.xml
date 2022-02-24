@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="validator_must">باید</string>
+    <string name="validator_or">یا</string>
+    <string name="validator_and">و</string>
+    <string name="validator_must_email">باید ایمیل باشد</string>
+    <string name="validator_must_email_host">باید یکی ازین دامنه ها باشد %s</string>
+    <string name="validator_must_contains_at_least_lowercase">باید حداقل شامل %s حرف کوچک لاتین باشد</string>
+    <string name="validator_must_contains_at_least_upper_case">باید حداقل شامل %s حرف بزرگ لاتین باشد</string>
+    <string name="validator_must_contains_at_least_number">باید حداقل شامل %s رقم باشد</string>
+    <string name="validator_must_absent">نباید شامل %s باشد</string>
+    <string name="validator_must_present">باید شامل %s باشد</string>
+    <string name="validator_must_be_one_of">باید یکی از این موارد باشد %s</string>
+    <string name="validator_must_contain_at_least_symbols">باید شامل این علامت ها باشد %s</string>
+    <string name="validator_must_in_range">طول باید حداقل %s و حداکثر %s باشد</string>
+    <string name="validator_must_not_empty">نباید خالی باشد</string>
+    <string name="validator_must_empty">باید خالی باشد</string>
+    <string name="validator_must_pattern_patch">با الگوی %s سازگاری ندارد</string>
+    <string name="validator_must_starts_with">باید با %s شروع شود</string>
+    <string name="validator_must_starts_with_eng_char">باید با کاراکتر انگلیسی شروع شود</string>
+    <string name="validator_must_ends_with">باید با %s تمام شود</string>
+    <string name="validator_must_same_as">مقدار باید با ورودی %s یکسان باشد</string>
+    <string name="validator_must_be_equal_to">باید برابر %s باشد</string>
+</resources>
