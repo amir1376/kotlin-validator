@@ -151,7 +151,7 @@ val phone get() = rule<String>{ input->
 ```
 ## Localization
 if your app has support of multiple language
-when building your rules you have to provide [Reason]
+when building your rules you have to provide `Reason`
 instead of raw string
 ```kotlin
 object PhoneInvalidReason:SingleReason
@@ -165,7 +165,7 @@ val phone get() = rule<String>{ input->
 ```
 then you have to provide PhoneInvalidReason translation to the adapter
 ```kotlin
-Validator.adapter.apply{
+ValidatedTranslation.adapter.apply{
     //declare translation here
     //this is up to you that how you want to translate that message
     PhoneInvalidReason::class providedBy {
@@ -175,7 +175,7 @@ Validator.adapter.apply{
 ```
 
 otherwise, if you are not interested on default translation approach
-you can implement your own translation by implementing `ValidatorTranslationAdapter`
+you can create your own translation by implementing `ValidatedTranslationAdapter`
 
 
 
