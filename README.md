@@ -151,7 +151,7 @@ val phone get() = rule<String>{ input->
 ```
 ## Localization
 if your app has support of multiple language
-when building your rules you have to provide `Reason`
+when building your rules ,you have to provide `Reason`
 instead of raw string
 ```kotlin
 object PhoneInvalidReason:SingleReason
@@ -174,14 +174,14 @@ ValidatedTranslation.adapter.apply{
 }
 ```
 
-otherwise, if you are not interested on default translation approach
-you can create your own translation by implementing `ValidatedTranslationAdapter`
+otherwise, if you are not interested on default translation approach,
+then you can create your own translation by implementing `ValidatedTranslationAdapter`
 
 
 
 ## Android support
-at the moment we have separated android module 
-that contains an Android translation adapter
+at the moment ,we have separated android module 
+that contains an Android translation adapter,
 it has some useful extensions to provide translation
 from string resources
 ```kotlin
@@ -192,21 +192,23 @@ Validator.android().apply{
 }
 ```
 
-if you use this library for android you can use default translation provided 
-by the android module
+if you use this library for android, you can use default translation provided 
+by the android module.
+
+
 currently supported languages are 
-* English (which is the default one if)
+* English (default)
 * Persian
 
 
 ### Coroutines support
 the `validate` method is a suspend function
-accordingly, rules are all suspend functions,
+accordingly, rules are all suspend functions too,
 so you can have suspended calls on them
-and because of that you have to call validation only coroutine scope
-but if your validation rule hasn't any suspend calls it is 
+and because of that, you have to call `validate` only in a coroutine scope
+but ,if your validation rule hasn't any suspend calls, it is 
 totally safe (there is no switching context in the core artifact) to
-call `validate` in runBlocking block (if you have to)
+wrap `validate` into runBlocking block (if you have to)
  
 
 # Attention
@@ -214,11 +216,11 @@ this library is still under beta
 so that may have bugs
 
 ## Contribution
-you can consider a pull request
+you can consider a pull request,
 if you see unexpected behaviors in the library
 or write more common plugins
 
-otherwise, if you have suggestions or have seen something weird, out there (😁),
+otherwise, if you have suggestions or have seen something weird out there (😁),
 please submit an issue
  
 ### TODOS
