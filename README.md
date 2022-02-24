@@ -3,7 +3,7 @@
 
 
 # A validator for kotlin
-validate your inputs or objects with the power kotlin typesafe builders
+validate your inputs or objects with power of the kotlin typesafe builders
 
 
 
@@ -75,8 +75,8 @@ you can validate your input by multiple rules
 val result=(email or empty).validate(input)
 ```
 
-## Validate complex nested objects
-of course sometimes you want to validate a model
+## Validate nested objects
+sometimes you want to validate a model
 the library has support this too
 for example you have the following models
 ```kotlin
