@@ -121,9 +121,9 @@ if(!result.isValid){
     result[User::login] 
 }
 ```
-if you can see in the above code user password has a complex rule ,
+if you can see in the above code, user password has a complex rule ,
 but you can extract it to a variable
-and because these rules are stateless (not store any reference of input)
+and because these rules are stateless (they don't store any reference of input)
 you can safely use this combination multiple times
 ```kotlin
 val strongPassword = containsAtLeastLowerCase(1) and
