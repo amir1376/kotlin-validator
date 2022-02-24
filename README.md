@@ -50,14 +50,14 @@ dependencies {
 
 
 
-##Android
+## Android
 in your app entry point initialize validator translation
 ```kotlin
-ValidatedTranslation.initDefaultAndroidAdapter()
+ValidatedTranslation.initDefaultAndroidAdapter(context)
 ```
 
 
-##JVM
+## JVM
 
 before any use of translation provide a TranslationAdapter
 here is the default adapter
@@ -196,7 +196,7 @@ the currently supported languages are
 * Persian
 
 
-### kotlin coroutines support
+### Coroutines support
 the `validate` method is a suspend function
 accordingly, rules are all suspend functions,
 so you can have suspended calls on them
@@ -206,18 +206,18 @@ totally safe (there is no switching context in the core artifact) to
 call `validate` in runBlocking block (if you have to)
  
 
-#Attention
+# Attention
 this library is still under beta
 so that may have bugs
 
-##Contribution
+## Contribution
 you can consider a pull request
 if you see unexpected behaviors in the library
 or write more common plugins
 
-otherwise, if you have suggestions or see something weird :D
-feel free to submit an issue
+otherwise, if you have suggestions or have seen something weird, out there (😁),
+please submit an issue
  
-###TODOS
+### TODOS
 * write tests
 * write more plugins
