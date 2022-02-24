@@ -206,11 +206,8 @@ the `validate` method is a suspend function
 accordingly, rules are all suspend functions too,
 so you can have suspended calls on them
 and because of that, you have to call `validate` only in a coroutine scope
-but ,if your validation rule hasn't any suspend calls, it is 
-totally safe (there is no switching context in the core artifact) to
-wrap `validate` into runBlocking block (if you have to)
- 
-
+the core artifact doesn't have any suspend calls
+this aproach is choosen for support coroutines
 # Attention
 this library is still under beta
 so that may have bugs
