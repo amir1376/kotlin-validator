@@ -1,3 +1,7 @@
+[![](https://jitpack.io/v/amir1376/kotlin-validator.svg)](https://jitpack.io/#amir1376/kotlin-validator)
+
+
+
 # A validator for kotlin
 validate your inputs or objects with the power kotlin typesafe builders
 ## Usage
