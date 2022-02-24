@@ -32,19 +32,18 @@ if(!result.isValid){
 
 # Setup
 ## Dependency
-put this code snippet into your gradle script
+put this into your gradle script
 ```groovy
 repositories {
-    mavenCentral()
-//  add jitpack repository
+    //...
     maven { url "https://jitpack.io" }
 }
 dependencies {
-//    to use in android
+    //...
+    //android usage
     implementation 'com.github.amir1376.kotlin-validator:android:$version'
     
-//    to use in jvm 
-//    his is the core artifact with no translations
+    //core (jvm)
     implementation 'com.github.amir1376.kotlin-validator:core:$version'
 }
 ```
