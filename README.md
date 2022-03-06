@@ -14,7 +14,7 @@ val result=email.validate("yourEmail@gmail.com")
 if(result.isValid){
     println("provided email is valid ,user:${result.user},host:${result.host}")
 }else{
-    replayToUser(result.reason!!.translate())
+    println(result.reason!!.translate())
 }
 ```
 or
