@@ -7,11 +7,11 @@ import ir.amirab.validator.thenValid
 
 class AbsentInvalidReason(val absent:String): SingleReason
 
-fun absent (present:String)= rule<String> {
-    val valid = !it.contains(present)
+fun absent (value:String)= rule<String> {
+    val valid = !it.contains(value)
     if (valid)
         thenValid()
     else {
-        because(AbsentInvalidReason(present))
+        because(AbsentInvalidReason(value))
     }
 }
