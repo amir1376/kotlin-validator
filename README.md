@@ -124,7 +124,7 @@ if(!result.isValid){
     result[User::login] 
 }
 ```
-if you can see in the above code, user password has a complex rule ,
+as you can see in the above code, user password has a complex rule ,
 but you can extract it to a variable
 and because these rules are stateless (they don't store any reference of input)
 you can safely use this combination multiple times
@@ -223,3 +223,4 @@ please submit an issue
 ### TODOS
 * write tests
 * write more plugins
+* support kotlin multiplatform
