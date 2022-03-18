@@ -7,11 +7,11 @@ import ir.amirab.validator.thenValid
 
 class PresentInvalidReason(val present:String): SingleReason
 
-fun present (present:String)= rule<String> {
-    val valid = it.contains(present)
+fun present (value:String)= rule<String> {
+    val valid = it.contains(value)
     if (valid)
         thenValid()
     else {
-        because(PresentInvalidReason(present))
+        because(PresentInvalidReason(value))
     }
 }
