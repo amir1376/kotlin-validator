@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="validator_must">يجب</string>
+    <string name="validator_or">أو</string>
+    <string name="validator_and">و</string>
+    <string name="validator_must_email">يجب أن يكون برید الکترونیک</string>
+    <string name="validator_must_email_host">يجب أن يكون أحد من هذه دومین %s</string>
+    <string name="validator_must_contains_at_least_lowercase">يجب أن يحتوي على %s أحرف صغيرة على الأقل</string>
+    <string name="validator_must_contains_at_least_upper_case">يجب أن يحتوي على %s أحرف كبيرة على الأقل</string>
+    <string name="validator_must_contains_at_least_number">يجب أن يحتوي على %s عدد على الأقل</string>
+    <string name="validator_must_absent">لا ينبغي أن تدرج %s  </string>
+    <string name="validator_must_present">يجب أن تشمل %s </string>
+    <string name="validator_must_be_one_of">يجب أن يكون واحدًا من %s</string>
+    <string name="validator_must_contain_at_least_symbols">يجب أن يحتوي على رموز %s على الأقل</string>
+    <string name="validator_must_in_range">يجب أن يكون الطول %s على الأقل و %s على الأكثر</string>
+    <string name="validator_must_not_empty">لا يجب أن تفرغ</string>
+    <string name="validator_must_empty">يجب أن تكون فارغة</string>
+    <string name="validator_must_pattern_patch"> غير متوافق مع %s  النمط</string>
+    <string name="validator_must_starts_with">يجب أن تبدأ%s  </string>
+    <string name="validator_must_starts_with_eng_char">يجب أن تبدأ بحرف إنجليزي</string>
+    <string name="validator_must_ends_with">يجب أن تنتهي %s  </string>
+    <string name="validator_must_same_as">يجب أن یكون مدخل  %s  يتطابق </string>
+    <string name="validator_must_be_equal_to">يجب أن تكون مساوية %s  </string>
+</resources>
