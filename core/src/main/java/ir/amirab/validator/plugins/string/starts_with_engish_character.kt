@@ -5,7 +5,7 @@ import ir.amirab.validator.reason.SingleReason
 import ir.amirab.validator.rule
 
 
-private val startWithEngChar by lazy { "$[a-zA-Z]+".toRegex() }
+private val startWithEngChar by lazy { "^[a-zA-Z]+".toRegex() }
 object StartsWithEnglishCharacterInvalidReason:SingleReason
 fun startsWithEnglishCharacter ()=rule<String>{
     val valid = startWithEngChar.matchEntire(it)
