@@ -3,7 +3,7 @@ plugins {
 }
 allprojects {
    group = "ir.amirab.validator"
-   version = "0.0.1-beta.2"
+   version = "0.0.1-beta.3"
    repositories {
       google()
       mavenCentral()
