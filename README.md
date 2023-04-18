@@ -1,11 +1,14 @@
-[![](https://jitpack.io/v/amir1376/kotlin-validator.svg)](https://jitpack.io/#amir1376/kotlin-validator)
-
-
-
-# A validator for kotlin
+<p style="text-align:center">
+<img width="75" alt="logo" src="static/logo.svg">
+<h1 style="text-align:center">Kotlin Validator</h1>
+</p>
+<p style="text-align:center;color">
 validate your inputs or objects with power of the kotlin typesafe builders
-
-
+<br><br>
+<a href="https://jitpack.io/#amir1376/kotlin-validator">
+<img alt="Kotlin Validator Jitpack" src="https://jitpack.io/v/amir1376/kotlin-validator.svg">
+</a>
+</p>
 
 ## Usage
 quick introduction
